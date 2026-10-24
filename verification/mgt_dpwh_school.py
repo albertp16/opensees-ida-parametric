@@ -140,8 +140,9 @@ def write(path, nodal=False):
             L += ["*CONLOAD", "; NODE_LIST, FX, FY, FZ, MX, MY, MZ, GROUP"]
             L += [f"   {n}, 0, 0, {-f:.3f}, 0, 0, 0, " for n, f in sorted(acc.items())]
         else:
-            L += ["*BEAMLOAD", "; ELEM_LIST, CMD, TYPE, DIR, bPROJ, [ECCEN], [VALUE], GROUP",
-                  "; [VALUE] : D1, P1, D2, P2, D3, P3, D4, P4"]
+            # Gen NX: bPROJ, then bECCEN (YES/NO), ECCDIR, I-END, J-END, bJ-END, then D1..P4, GROUP, bAddH, H1, H2, bUseDist
+            L += ["*BEAMLOAD", "; ELEM_LIST, CMD, TYPE, DIR, bPROJ, [ECCEN], [VALUE], GROUP, [ADDITIONAL]",
+                  "; [ECCEN] : bECCEN, ECCDIR, I-END, J-END, bJ-END ; [VALUE] : D1, P1, D2, P2, D3, P3, D4, P4"]
             L += [f"   {e + 1}, BEAM, UNILOAD, GZ, NO, NO, aDir[1], , , , 0, {-q:.3f}, 1, {-q:.3f}, 0, 0, 0, 0, , NO, 0, 0, NO, "
                   for e, q in sorted(w[lc].items())]
         L.append("")
@@ -156,7 +157,7 @@ def write(path, nodal=False):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="dpwh_school_verification.mgt")
+    ap.add_argument("--out", default="dpwh_school_verification_v3.mgt")
     ap.add_argument("--nodal", action="store_true")
     a = ap.parse_args()
     nn, ne, tot, sw = write(a.out, a.nodal)
