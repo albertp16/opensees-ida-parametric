@@ -12,5 +12,6 @@ authors:
     given-names: Mark Christian
 license: MIT
 repository-code: "https://github.com/albertp16/opensees-ida-parametric"
+doi: 10.5281/zenodo.23610377
 version: 1.0.0
 date-released: 2026-10-24

@@ -1,5 +1,7 @@
 # opensees-ida-parametric
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23610377.svg)](https://doi.org/10.5281/zenodo.23610377)
+
 Open-source OpenSeesPy workflow for **automated parametric incremental dynamic analysis (IDA) of RC
 frame buildings**. Companion code to Pamonag et al., "An Open-Source OpenSeesPy Workflow for Automated
 Parametric IDA of RC Frame Buildings", EOSD26 (Springer LNCE).
