@@ -1,0 +1,17 @@
+time	config	records	seconds	max_dIM_g	nonconv	check	status	description
+2026-10-21 23:32	f9f990a7	synthetic	72.7	0.000	1	pass	keep	baseline (IMKPeakOriented, settings used so far)
+2026-10-21 23:33	2004340b	synthetic	72.2	0.000	1	pass	keep	eigen: default ARPACK solver
+2026-10-21 23:34	1b3ed3f2	synthetic	40.1	0.000	1	pass	keep	system BandGeneral
+2026-10-21 23:35	7206ecb5	synthetic	60.0	0.000	0	pass	discard	system SparseGeneral
+2026-10-21 23:36	30a888eb	synthetic	41.4	0.000	0	pass	discard	stop_drift 0.12 (still above the 0.10 collapse drift)
+2026-10-21 23:36	b27dd7a1	synthetic	41.2	0.000	1	pass	discard	free-vibration tail 3 s
+2026-10-21 23:37	df43d756	synthetic	35.0	0.000	0	pass	keep	tol 1e-4
+2026-10-21 23:37	d086b352	synthetic	35.1	0.000	0	pass	discard	max_iter 20
+2026-10-21 23:38	192afaa6	synthetic	29.3	0.000	0	pass	keep	primary KrylovNewton
+2026-10-21 23:38	94946a5a	synthetic	30.0	0.000	0	pass	discard	fallbacks: NewtonLineSearch first
+2026-10-21 23:39	f862bcfb	synthetic	29.4	0.000	0	pass	discard	fallbacks: drop the 50-substep stage
+2026-10-24 08:23	192afaa6	real	34.4	0.084	0	fail	discard	best config, real records check
+2026-10-24 08:25	bf21a9e8	real	78.1	0.106	0	fail	discard	real: cfg_default
+2026-10-24 08:26	1b3ed3f2	real	51.7	0.106	0	fail	discard	real: cfg_band_only
+2026-10-24 08:27	ff02c21d	real	39.9	0.053	0	fail	discard	real: cfg_tol5
+2026-10-24 08:40	be9c1a5e	real	38.4	0.053	0	pass*	keep	REAL-RECORD DECISION: tol back to 1e-5 (tol 1e-4 shifted one IDA by 0.084 g / 8.5%); max shift 0.053 g (1.4%) vs 0.106 g for the original default settings; dt/2 reference

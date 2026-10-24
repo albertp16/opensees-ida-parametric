@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it and the EOSD26 paper."
+title: "opensees-ida-parametric: an open-source OpenSeesPy workflow for automated parametric IDA of RC frame buildings"
+authors:
+  - family-names: Pamonag
+    given-names: Albert C.
+  - family-names: Abesamis
+    given-names: Cheasmin Mauve
+  - family-names: Pajarillaga
+    given-names: Camille
+  - family-names: Esguerra
+    given-names: Mark Christian
+license: MIT
+repository-code: "https://github.com/albertp16/opensees-ida-parametric"
+version: 1.0.0
+date-released: 2026-10-24

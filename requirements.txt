@@ -1,0 +1,6 @@
+numpy>=1.24
+scipy>=1.10
+openseespy>=3.5
+matplotlib>=3.7
+pytest>=7.4
+# optional: pyvista (verification/fig2_render.py)

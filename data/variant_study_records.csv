@@ -1,0 +1,16 @@
+# EOSD26 variant study: first record of each event in FEMA P695 Table A-4 (far-field set), component 1. One record per event avoids event-to-event correlation. Download from PEER NGA by RSN.
+id,event,year,M,station,rsn,comp1
+1,Northridge,1994,6.7,Beverly Hills - Mulhol,953,NORTHR/MUL009
+3,"Duzce, Turkey",1999,7.1,Bolu,1602,DUZCE/BOL000
+4,Hector Mine,1999,7.1,Hector,1787,HECTOR/HEC000
+5,Imperial Valley,1979,6.5,Delta,169,IMPVALL/H-DLT262
+7,"Kobe, Japan",1995,6.9,Nishi-Akashi,1111,KOBE/NIS000
+9,"Kocaeli, Turkey",1999,7.5,Duzce,1158,KOCAELI/DZC180
+11,Landers,1992,7.3,Yermo Fire Station,900,LANDERS/YER270
+13,Loma Prieta,1989,6.9,Capitola,752,LOMAP/CAP000
+15,"Manjil, Iran",1990,7.4,Abbar,1633,MANJIL/ABBAR--L
+16,Superstition Hills,1987,6.5,El Centro Imp. Co.,721,SUPERST/B-ICC000
+18,Cape Mendocino,1992,7.0,Rio Dell Overpass,829,CAPEMEND/RIO270
+19,"Chi-Chi, Taiwan",1999,7.6,CHY101,1244,CHICHI/CHY101-E
+21,San Fernando,1971,6.6,LA - Hollywood Stor,68,SFERN/PEL090
+22,"Friuli, Italy",1976,6.5,Tolmezzo,125,FRIULI/A-TMZ000

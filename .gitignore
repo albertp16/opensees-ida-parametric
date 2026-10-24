@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+output/
+*.h5
+*.AT2
+*.png
+!docs/*.png
+variant_results_*.csv
